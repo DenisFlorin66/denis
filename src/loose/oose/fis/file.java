@@ -1,8 +1,3 @@
-package loose.oose.fis;
-
-import loose.oose.fis.documents.Document;
-import loose.oose.fis.documents.JSON;
-import loose.oose.fis.documents.XML;
 import loose.oose.fis.processors.Procesor;
 import loose.oose.fis.processors.ProcesorCautare;
 import loose.oose.fis.processors.ProcesorCompus;
@@ -15,18 +10,7 @@ public class Main {
 
         String[] xmlList = new String[6];
         xmlList[0] = "<tag1>";
-        xmlList[1] = "text1";
-        xmlList[2] = "</tag1>";
-        xmlList[3] = "<tag2>";
-        xmlList[4] = "text2";
-        xmlList[5] = "</tag2>";
-
-        Document xml = new XML(xmlList);
-
-        ArrayList<Document> documente = new ArrayList<>();
-        documente.add(xml);
-
-        ProcesorCompus pc1 = new ProcesorCompus();
+         ProcesorCompus pc1 = new ProcesorCompus();
         pc1.adaugaProcesor(c1);
         pc1.adaugaProcesor(c2);
 
